@@ -566,6 +566,7 @@ def wait(secs, hogCPUperiod=0.2):
         long which may result in poorer timing.
 
     """
+    hogCPUperiod = 0.0011
     # Calculate the relaxed period which we periodically suspend the thread,
     # this puts less load on the CPU during long wait intervals.
     relaxedPeriod = secs - hogCPUperiod
