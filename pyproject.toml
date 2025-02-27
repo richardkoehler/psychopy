@@ -85,11 +85,6 @@ dependencies = [
     "python-vlc == 3.0.11115; platform_system == \"Windows\"",
     "python-vlc >= 3.0.12118; platform_system != \"Windows\"",
     "pypiwin32; platform_system == \"Windows\"",
-    "pyobjc-core; platform_system == \"Darwin\"",
-    "pyobjc-framework-Quartz < 8.0; platform_system == \"Darwin\"",
-    "pyobjc; platform_system == \"Darwin\"",
-    "zeroconf; platform_system == \"Darwin\"",
-    "python-xlib; platform_system == \"Linux\"",
     'tables<3.9; python_version < "3.9"',
     'tables; python_version >= "3.9"',
     'blosc2<2.2.8; python_version < "3.9"',  # dependency of tables
@@ -138,7 +133,6 @@ psychopy = "psychopy.app.psychopyApp:main"
 [build-system]
 requires = [
     "pdm-backend",
-    "distro; platform_system == \"Linux\"",
     "tomlkit",
     ]
 build-backend = "pdm.backend"
